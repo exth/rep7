@@ -14,14 +14,16 @@ struct MyView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Text("This is my View >>")
-                    .font(.title).bold()
+                VStack {
+                    Text("This is my View >>")
+                        .font(.title).bold()
+                }
+                .padding()
+                .background(Color.purple.opacity(0.3))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                
+                Text("iweoraghuvweilorlvag")
             }
-            .padding()
-            .background(Color.purple.opacity(0.3))
-            .clipShape(RoundedRectangle(cornerRadius: 20))
-            
-            
         }
     }
 }
